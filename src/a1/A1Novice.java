@@ -52,7 +52,7 @@ public class A1Novice {
 		}
 	
 		for (int i =0; i< fnames.length;i++){
-			System.out.println(fletter [i] +". "+ lnames [i] + ": " + totalp[i]);
+			System.out.println(fletter [i] +". "+ lnames [i] + ": " + String.format("%.2f", totalp[i]));
 		
 		}
 	}
