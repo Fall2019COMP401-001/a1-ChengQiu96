@@ -31,18 +31,20 @@ public class A1Novice {
 				item [i2] = scan.next();
 				price[i2] = scan.nextDouble();
 				
-				double total = 0;
-				/// loop to calculate total price for each person
-				for (int i3 = 0;i3 < item.length;i3++) {
-				   for(int j = 0; j < item.length;j++) {
-				    if (i3==j){
-					   total += quantity[i3]*price[j];
-				    }
-				   
-				   }
-				}
-			totalp [i] = total; 					
+									
 			}
+			double total = 0;
+			/// loop to calculate total price for each person
+			for (int i3 = 0;i3 < item.length;i3++) {
+			   for(int j = 0; j < item.length;j++) {
+			    if (i3==j){
+				   total += quantity[i3]*price[j];
+			    }
+			   
+			   }
+			}
+		totalp [i] = total; 
+			
 			
 		}
 		scan.close();
